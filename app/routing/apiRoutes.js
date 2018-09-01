@@ -21,6 +21,7 @@ module.exports = function(app) {
       console.log(`Data has been served.`);
       console.log('-----\n');
     res.json(friendData);
+    console.log(friendData);
   });
 
 
@@ -34,7 +35,7 @@ module.exports = function(app) {
     //  This will be used to handle incoming survey results. 
     friendData.push(req.body);
     console.log(req.body);
-    
+
     //  This route will also be used to handle the compatibility logic. 
     //take friendVal (5)
     //store friendVal
